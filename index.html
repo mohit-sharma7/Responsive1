@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .in {
+        display: block;
+      }
+
+      form {
+        display: flex;
+      }
+
+      .item1 {
+        /* width: 80%; */
+        display: flex;
+        flex: 4;
+      }
+
+      .item2 {
+        /* width: 20%; */
+        flex: 1;
+        display: flex;
+      }
+
+      .in {
+        /* width: 33%; */
+        flex: 1;
+        border: 1px solid blue;
+        margin: 0 1px;
+      }
+
+      button {
+        display: block;
+        flex: 1;
+        border: 1px solid red;
+        margin: 0 1px;
+        /* width: 33%; */
+      }
+
+      @media only screen and (max-width: 1000px) {
+        form {
+          flex-direction: column;
+        }
+
+        .item2 {
+          align-self: flex-end;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="item1">
+          <input class="in" type="text" name="" id="" />
+          <input class="in" type="text" name="" id="" />
+          <input class="in" type="text" name="" id="" />
+        </div>
+
+        <div class="item2">
+          <button class="bt" type="submit">Submit</button>
+          <button class="bt" type="reset">Reset</button>
+          <button class="bt" type="submit">Revert</button>
+        </div>
+      </form>
+      <!-- <div class="item1">
+        <input class="in" type="text" name="" id="" />
+        <input class="in" type="text" name="" id="" />
+        <input class="in" type="text" name="" id="" />
+      </div>
+
+      <div class="item2">
+        <button class="bt" type="submit">Submit</button>
+        <button class="bt" type="reset">Reset</button>
+        <button class="bt" type="submit">Revert</button>
+      </div> -->
+    </div>
+  </body>
+</html>
